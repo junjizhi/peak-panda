@@ -1,0 +1,20 @@
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-item {
+    width: 50%;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer-claim {
+    width: 100%;
+}
