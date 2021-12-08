@@ -1,0 +1,77 @@
+.price {
+    margin-top: 40px;
+    @include media-query($tablet) {
+        .wrapper-flex {
+            flex-direction: column;
+        }
+        .price-card {
+            width: 100% !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            h1,
+            h3 {
+                text-align: center;
+            }
+        }
+    }
+}
+
+.price-title {
+    background-color: $grey-color-light;
+    margin-bottom: -180px;
+    padding: 60px 60px 160px 60px;
+}
+
+.price-card {
+    background-color: $yellow-color;
+    color: white;
+    padding: 20px;
+    width: calc(33.3% - 10px) !important;
+    margin: 20px 0;
+    box-shadow: 0 0 20px -4px $grey-color;
+    h1 {
+        margin: 0;
+        span {
+            color: $grey-color;
+            font-size: $base-font-size;
+            font-weight: $base-font-weight;
+        }
+    }
+    h3 {
+        margin: 0;
+        color: $grey-color;
+        font-weight: $heading-half-bold;
+    }
+    ul {
+        margin: 20px 0;
+    }
+    li {
+        color: $grey-color;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        font-size: 18px;
+        position: relative;
+        padding-left: 30px;
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url('../../assets/check-icon.svg');
+            background-position: center;
+            background-size: contain;
+            position: absolute;
+            top: 6px;
+            left: 0px;
+        }
+    }
+    .button {
+        font-size: $lg-font-size;
+        @include media-query($on-palm) {
+            width: 80%;
+        }
+    }
+}

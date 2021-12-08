@@ -1,0 +1,40 @@
+.steps {
+    h2 {
+        font-weight: $heading-bold;
+        margin-bottom: 40px;
+    }
+    h3 {
+        font-weight: $heading-half-bold;
+    }
+    .step {
+        position: relative;
+        .step-arrow {
+            font-size: 26px;
+            color: $brand-color;
+            font-weight: $heading-half-bold;
+        }
+        .step-arrow-right {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .step-arrow-down {
+            display: none;
+        }
+    }
+    .wrapper-flex {
+        @include media-query($tablet) {
+            flex-direction: column;
+            .step {
+                width: 100%;
+                .step-arrow-right {
+                    display: none;
+                }
+                .step-arrow-down {
+                    display: block;
+                }
+            }
+        }
+    }
+}

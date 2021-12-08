@@ -2,6 +2,16 @@
  * Reset some basic elements
  */
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 body,
 h1,
 h2,
@@ -40,6 +50,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 
@@ -155,6 +166,9 @@ h3 {
 a {
     color: $brand-color;
     text-decoration: none;
+    &.primary {
+        font-weight: $heading-half-bold;
+    }
     &:visited {
         color: darken($brand-color, 15%);
     }
@@ -226,6 +240,8 @@ pre {
     margin-left: auto;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
+    padding-top: 40px;
+    padding-bottom: 40px;
     @extend %clearfix;
     @include media-query($on-laptop) {
         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
@@ -239,8 +255,9 @@ pre {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    &.flex-align-start {
+        align-items: flex-start;
+    }
     .flex-half {
         width: 45%;
     }
@@ -335,15 +352,29 @@ table {
  * Button
  */
 
+button {
+    border: none;
+}
+
 .button {
     border-radius: 10px;
-    padding: 10px;
-    font-size: $medium-font-size;
     text-align: center;
     display: block;
+    font-weight: $heading-half-bold;
     &.primary {
+        font-size: $medium-font-size;
+        padding: 10px;
         background-color: $background-color;
         color: black;
+    }
+    &.secondary {
+        font-size: $base-font-size;
+        background-color: $brand-color;
+        color: white;
+        padding: 18px;
+    }
+    &.long {
+        width: 100%;
     }
     &.short {
         width: 150px;
@@ -354,7 +385,7 @@ table {
     }
     @include media-query($on-palm) {
         &.full-on-mobile {
-            width: auto;
+            width: 100%;
         }
     }
 }
@@ -366,4 +397,9 @@ table {
 
 .text-center-align {
     text-align: center;
+}
+
+.position-centern-align {
+    display: block;
+    margin: 0 auto;
 }

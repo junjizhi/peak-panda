@@ -10,6 +10,7 @@ sans-serif,
 "Apple Color Emoji",
 "Segoe UI Emoji",
 "Segoe UI Symbol" !default;
+$lg-font-size: 20px !default;
 $base-font-size: 16px !default;
 $medium-font-size: 14px !default;
 $small-font-size: 12px !default;
@@ -29,6 +30,7 @@ $yellow-color: #ffcb3c;
 $table-text-align: left !default;
 // Width of the content area
 $content-width: 1200px !default;
+$tablet: 960px !default;
 $on-palm: 600px !default;
 $on-laptop: 800px !default;
 $mobile: 400px !default;
@@ -54,4 +56,6 @@ $mobile: 400px !default;
 "peak-panda/layout",
 "peak-panda/syntax-highlighting",
 "peak-panda/page",
+"peak-panda/price-card",
+"peak-panda/steps",
 "peak-panda/footer";
