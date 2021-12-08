@@ -11,7 +11,11 @@ sans-serif,
 "Segoe UI Emoji",
 "Segoe UI Symbol" !default;
 $base-font-size: 16px !default;
+$medium-font-size: 14px !default;
+$small-font-size: 12px !default;
 $base-font-weight: 400 !default;
+$heading-bold: 800 !default;
+$heading-half-bold: 600 !default;
 $small-font-size: $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 $spacing-unit: 30px !default;
@@ -24,9 +28,10 @@ $grey-color-dark: darken($grey-color, 25%) !default;
 $yellow-color: #ffcb3c;
 $table-text-align: left !default;
 // Width of the content area
-$content-width: 800px !default;
+$content-width: 1200px !default;
 $on-palm: 600px !default;
 $on-laptop: 800px !default;
+$mobile: 400px !default;
 // Use media queries like this:
 // @include media-query($on-palm) {
 //   .wrapper {
@@ -46,7 +51,7 @@ $on-laptop: 800px !default;
 
 // Import partials.
 @import "peak-panda/base",
-    "peak-panda/layout",
-    "peak-panda/syntax-highlighting",
-    "peak-panda/page",
-    "peak-panda/footer";
+"peak-panda/layout",
+"peak-panda/syntax-highlighting",
+"peak-panda/page",
+"peak-panda/footer";

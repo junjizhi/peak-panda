@@ -2,37 +2,129 @@
 layout: default
 ---
 
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+<main class="page-content" aria-label="Content">
+    <div class="wrapper wrapper-flex">
+        <div class="flex-half home">
+          {%- if page.title -%}
+            <h1 class="page-heading">{{ page.title }}</h1>
+          {%- endif -%}
 
-  {{ content }}
+          {{ content }}
 
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
+          {%- if site.posts.size > 0 -%}
+            <h1>{{ page.list_title | default: "Posts" }}</h2>
+            <ul class="post-list">
+              {%- for post in site.posts -%}
+              <li>
+                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                <p>
+                  The tool that allows you to build beautiful sites<br/>
+                  all inside Forestry's content manager.
+                </p>
+                {%- if site.show_excerpts -%}
+                  {{ post.excerpt }}
+                {%- endif -%}
+              </li>
+              {%- endfor -%}
+            </ul>
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%}
+            <a href="{{ "/feed.xml" | relative_url }}" class="button primary short full-on-mobile">subscribe via RSS</a>
+          {%- endif -%}
 
-</div>
+        </div>
 
-<div class="home-image image-shadow">
-    <img src="./assets/main-image-placeholder.jpg" alt="">
-</div>
+        <div class="flex-half home-image image-shadow">
+            <img src="./assets/main-image-placeholder.jpg" alt="">
+        </div>
+    </div>
+</main>
+
+<section class="wrapper wrapper-flex">
+    <div class="flex-half image-shadow">
+        <img src="./assets/main-image-placeholder.jpg" alt="">
+    </div>
+
+    <div class="flex-half home">
+      {%- if page.title -%}
+        <h2 class="page-heading">{{ page.title }}</h1>
+      {%- endif -%}
+
+      {{ content }}
+
+      {%- if site.posts.size > 0 -%}
+        <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+        <ul class="post-list">
+          {%- for post in site.posts -%}
+          <li>
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+            <h3>
+              <a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+              </a>
+            </h3>
+            {%- if site.show_excerpts -%}
+              {{ post.excerpt }}
+            {%- endif -%}
+          </li>
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
+
+    </div>
+</section>
+
+<section class="wrapper wrapper-flex">
+    <div class="flex-half home">
+      {%- if page.title -%}
+        <h2 class="page-heading">{{ page.title }}</h1>
+      {%- endif -%}
+
+      {{ content }}
+
+      {%- if site.posts.size > 0 -%}
+        <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+        <ul class="post-list">
+          {%- for post in site.posts -%}
+          <li>
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+            <h3>
+              <a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+              </a>
+            </h3>
+            {%- if site.show_excerpts -%}
+              {{ post.excerpt }}
+            {%- endif -%}
+          </li>
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
+
+    </div>
+
+    <div class="flex-half image-shadow">
+        <img src="./assets/main-image-placeholder.jpg" alt="">
+    </div>
+</section>
+
+<section class="wrapper text-center-align">
+    <h2>Heading Two</h2>
+    <p>
+        16 Fully Responsive Design Blocks
+        The Design Blocks can be used without Forestry but to harness the power of Blocks we recommend using Forestry. Once the site is imported you can immediately create new sites and make them fully customizable.
+    </p>
+</section>
+
+<section class="wrapper wrapper-flex">
+    <div class="flex-3-col image-shadow">
+        <img src="./assets/main-image-placeholder.jpg" alt="">
+    </div>
+    <div class="flex-3-col image-shadow">
+        <img src="./assets/main-image-placeholder.jpg" alt="">
+    </div>
+    <div class="flex-3-col image-shadow">
+        <img src="./assets/main-image-placeholder.jpg" alt="">
+    </div>
+</section>

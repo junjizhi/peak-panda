@@ -126,13 +126,25 @@ li {
  * Headings
  */
 
-h1,
-h2,
 h3,
 h4,
 h5,
 h6 {
     font-weight: $base-font-weight;
+}
+
+h1 {
+    font-size: 3.5em;
+    font-weight: $heading-bold;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: $heading-half-bold;
+}
+
+h3 {
+    font-size: 1.25rem;
 }
 
 
@@ -209,7 +221,7 @@ pre {
 
 .wrapper {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width : calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
@@ -217,7 +229,7 @@ pre {
     @extend %clearfix;
     @include media-query($on-laptop) {
         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width : calc(#{$content-width} - (#{$spacing-unit}));
+        max-width: calc(#{$content-width} - (#{$spacing-unit}));
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
     }
@@ -227,8 +239,32 @@ pre {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .image-shadow {
-        width: 50%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .flex-half {
+        width: 45%;
+    }
+    .flex-3-col {
+        width: 30%;
+    }
+    @include media-query($on-palm) {
+        flex-wrap: wrap;
+        .flex-3-col {
+            width: 100%;
+            margin-bottom: 20px;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+    @include media-query($mobile) {
+        .flex-half {
+            width: 100%;
+            margin-bottom: 20px;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
     }
 }
 
@@ -292,4 +328,42 @@ table {
     td {
         border: 1px solid $grey-color-light;
     }
+}
+
+
+/**
+ * Button
+ */
+
+.button {
+    border-radius: 10px;
+    padding: 10px;
+    font-size: $medium-font-size;
+    text-align: center;
+    display: block;
+    &.primary {
+        background-color: $background-color;
+        color: black;
+    }
+    &.short {
+        width: 150px;
+    }
+    &:hover {
+        text-decoration: none;
+        opacity: 80%;
+    }
+    @include media-query($on-palm) {
+        &.full-on-mobile {
+            width: auto;
+        }
+    }
+}
+
+
+/**
+ * Utilities
+ */
+
+.text-center-align {
+    text-align: center;
 }
