@@ -1,0 +1,29 @@
+header {
+    .wrapper {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .site-title {
+        display: block;
+        img {
+            width: 60px;
+            display: inline;
+        }
+    }
+    nav.site-nav {
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+        .trigger {
+            text-align: center;
+        }
+        @include media-query($on-palm) {
+            flex-direction: column;
+            width: auto;
+            border-radius: 10px;
+            .trigger .page-link {
+                margin-left: 0;
+            }
+        }
+    }
+}

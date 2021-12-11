@@ -29,9 +29,6 @@
     .nav-trigger {
         display: none;
     }
-    .menu-icon {
-        display: none;
-    }
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
@@ -42,31 +39,25 @@
     }
     @include media-query($on-palm) {
         position: absolute;
-        top: 9px;
+        top: 30px;
         right: $spacing-unit / 2;
         background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
+        text-align: center;
         label[for="nav-trigger"] {
             display: block;
             float: right;
-            width: 36px;
-            height: 36px;
             z-index: 2;
             cursor: pointer;
         }
         .menu-icon {
             display: block;
-            float: right;
-            width: 36px;
+            width: 35px;
+            height: 35px;
+        }
+        .close-icon {
+            display: none;
+            width: 26px;
             height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-            >svg {
-                fill: $grey-color-dark;
-            }
         }
         input~.trigger {
             clear: both;
@@ -75,6 +66,14 @@
         input:checked~.trigger {
             display: block;
             padding-bottom: 5px;
+        }
+        input:checked~label {
+            .menu-icon {
+                display: none;
+            }
+            .close-icon {
+                display: block;
+            }
         }
         .page-link {
             display: block;
