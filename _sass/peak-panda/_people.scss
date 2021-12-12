@@ -1,0 +1,45 @@
+section.people {
+    .people-title {
+        width: 65%;
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+    .people-lists {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .people-list {
+        width: 23%;
+        &--img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        h4 {
+            margin-top: 15px;
+            margin-bottom: 0;
+        }
+        &--title {
+            font-size: $small-font-size;
+        }
+    }
+    @include media-query($tablet) {
+        .people-list {
+            width: 45%;
+            text-align: center;
+            margin-bottom: 20px;
+            &--img {
+                margin: auto;
+                display: block;
+            }
+        }
+    }
+    @include media-query($on-palm) {
+        flex-direction: column;
+        .people-title,
+        .people-list {
+            width: 100%;
+        }
+    }
+}
