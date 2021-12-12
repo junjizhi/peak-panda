@@ -3,31 +3,74 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+    <div class="footer-menu wrapper-flex">
+      <ul class="footer-lists">
+        <li class="footer-list--title">Category</li>
+        <li class="footer-list">
+          <a href="/news">News</a>
+        </li>
+        <li class="footer-list">
+          <a href="/world">World</a>
+        </li>
+        <li class="footer-list">
+          <a href="/games">Games</a>
+        </li>
+        <li class="footer-list">
+          <a href="/references">References</a>
+        </li>
+      </ul>
 
-    <div class="footer-col-wrapper footer-flex">
-      <div class="footer-item">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
+      <ul class="footer-lists">
+        <li class="footer-list--title">Apples</li>
+        <li class="footer-list">
+          <a href="/news">Web</a>
+        </li>
+        <li class="footer-list">
+          <a href="/world">E-Commerce</a>
+        </li>
+        <li class="footer-list">
+          <a href="/games">Business</a>
+        </li>
+        <li class="footer-list">
+          <a href="/references">Entertainment</a>
+        </li>
+        <li class="footer-list">
+          <a href="/references">Portfolio</a>
+        </li>
+      </ul>
 
-      <div class="footer-item footer-social">
-        {%- include social.html -%}
-      </div>
+      <ul class="footer-lists">
+        <li class="footer-list--title">Business</li>
+        <li class="footer-list">
+          <a href="/news">Infopreneur</a>
+        </li>
+        <li class="footer-list">
+          <a href="/world">Personal</a>
+        </li>
+        <li class="footer-list">
+          <a href="/games">Wiki</a>
+        </li>
+        <li class="footer-list">
+          <a href="/references">Forum</a>
+        </li>
+      </ul>
 
-      <div class="footer-claim">
-        <p>{{- site.description | escape -}}</p>
+      <div class="footer-subscribe">
+        <form>
+          <label for="subscribe-input">Subscribe for updates</label>
+          <div class="footer-subscribe--input">
+            <input type="text" name="subscribe" id="subscribe-input" placeholder="Email">
+            <button class="button secondary short">Subscribe</button>
+          </div>
+        </form>
       </div>
+    </div>
+
+    <div class="footer-text wrapper-flex">
+      <div class="footer-copy">
+        <p>&copy;Copyright 2020 Company. All rights reserved.</p>
+      </div>
+      {%- include social.html -%}
     </div>
 
   </div>
