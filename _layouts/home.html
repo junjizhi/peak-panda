@@ -9,27 +9,11 @@ layout: default
             <h1 class="page-heading">{{ page.title }}</h1>
           {%- endif -%}
 
-          {{ content }}
-
-          {%- if site.posts.size > 0 -%}
-            <h1>{{ page.list_title | default: "Posts" }}</h2>
-            <ul class="post-list">
-              {%- for post in site.posts -%}
-              <li>
-                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                <p>
-                  The tool that allows you to build beautiful sites<br/>
-                  all inside Forestry's content manager.
-                </p>
-                {%- if site.show_excerpts -%}
-                  {{ post.excerpt }}
-                {%- endif -%}
-              </li>
-              {%- endfor -%}
-            </ul>
-
-            <a href="{{ "/feed.xml" | relative_url }}" class="button primary short full-on-mobile">subscribe via RSS</a>
-          {%- endif -%}
+            <h1>Peak Panda</h1>
+            <h3>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+            </h3>
+            <button class="button secondary short full-on-mobile">Sign up now</button>
 
         </div>
 
@@ -43,66 +27,21 @@ layout: default
   <div class="flex-half image-shadow">
     <img src="./assets/undraw_Fans_re_cri3.png" alt="">
     </div>
-
     <div class="flex-half home">
-      {%- if page.title -%}
-        <h2 class="page-heading">{{ page.title }}</h1>
-      {%- endif -%}
-
-      {{ content }}
-
-      {%- if site.posts.size > 0 -%}
-        <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-        <ul class="post-list">
-          {%- for post in site.posts -%}
-          <li>
-            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-            <span class="post-meta">{{ post.date | date: date_format }}</span>
-            <h3>
-              <a class="post-link" href="{{ post.url | relative_url }}">
-                {{ post.title | escape }}
-              </a>
-            </h3>
-            {%- if site.show_excerpts -%}
-              {{ post.excerpt }}
-            {%- endif -%}
-          </li>
-          {%- endfor -%}
-        </ul>
-      {%- endif -%}
-
+      <h2>Adopt a panda, right now</h2>
+      <h3>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+      </h3>
     </div>
 </section>
 
 <section class="wrapper wrapper-flex">
-    <div class="flex-half home">
-      {%- if page.title -%}
-        <h2 class="page-heading">{{ page.title }}</h1>
-      {%- endif -%}
-
-      {{ content }}
-
-      {%- if site.posts.size > 0 -%}
-        <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-        <ul class="post-list">
-          {%- for post in site.posts -%}
-          <li>
-            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-            <span class="post-meta">{{ post.date | date: date_format }}</span>
-            <h3>
-              <a class="post-link" href="{{ post.url | relative_url }}">
-                {{ post.title | escape }}
-              </a>
-            </h3>
-            {%- if site.show_excerpts -%}
-              {{ post.excerpt }}
-            {%- endif -%}
-          </li>
-          {%- endfor -%}
-        </ul>
-      {%- endif -%}
-
-    </div>
+  <div class="flex-half home">
+    <h2>All you have to do is fill a form</h2>
+    <h3>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+    </h3>
+  </div>
 
     <div class="flex-half image-shadow">
       <img src="./assets/undraw_Designer_life_re_6ywf.png" alt="">
@@ -110,10 +49,9 @@ layout: default
 </section>
 
 <section class="wrapper text-center-align">
-    <h2>Heading Two</h2>
+    <h2>Panda is your best companion</h2>
     <p>
-        16 Fully Responsive Design Blocks
-        The Design Blocks can be used without Forestry but to harness the power of Blocks we recommend using Forestry. Once the site is imported you can immediately create new sites and make them fully customizable.
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
     </p>
 </section>
 
@@ -130,28 +68,28 @@ layout: default
 </section>
 
 <section class="wrapper text-center-align">
-  <h2>Get your next website up and running in minutes.</h2>
-  <p>With the world’s fastest, easiest way to build websites, you can create a site with no coding skills. Publish across channels for one low price!</p>
+  <h2>Bring your own panda home in minutes.</h2>
+  <p>At vero eos et accusamus et iusto odio dignissimos ducimus</p>
   <button class="button secondary short position-centern-align full-on-mobile">Try it free now</button>
 </section>
 
 <section class="wrapper why-choose-us">
-  <h2 class="text-center-align">Build a website in minutes.</h2>
-  <p class="text-center-align">Build websites that are beautiful, easy to use and integrate with your favorite tools.</p>
-  <div class="wrapper-flex flex-align-start">
+  <h2 class="text-center-align">Play with a panda, every day.</h2>
+  <p class="text-center-align">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    <div class="wrapper-flex flex-align-start">
       <div class="flex-half why-choose-us__content">
             <img src="./assets/flash-icon.svg">
             <div class="why-choose-use__text">
-              <h3>Fastest Way to Build Websites.</h3>
-              <p>With our drag-and-drop editor, you can build stunning, interactive websites without touching code!</p>
+              <h3>Fastest Way to adopt a Panda.</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
               <a class="primary">Learn more</a>
             </div>
       </div>
       <div class="flex-half why-choose-us__content">
             <img src="./assets/flash-icon.svg">
             <div class="why-choose-use__text">
-              <h3>Easiest Way to Publish Across Channels.</h3>
-              <p>With our drag-and-drop editor, you can build stunning, interactive websites without touching code!</p>
+              <h3>Easiest Way to show off your new companion.</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
               <a class="primary">Learn more</a>
             </div>
       </div>
