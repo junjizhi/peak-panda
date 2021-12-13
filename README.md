@@ -4,10 +4,14 @@ A modern, responsive landing page theme for business, built in Jekyll.
 
 The theme contains multiple commonly used sections, including logo, header, hero CTA, pricing table, team intro, etc.
 
+See the [demo](https://user-images.githubusercontent.com/2715151/145758133-e352473d-2afd-46cb-95e4-69b856ae7b61.png).
 
-## Demo
+## Screenshots
 
-TBA
+<img width="1194" alt="Screen Shot 2021-12-13 at 12 35 23 AM" src="https://user-images.githubusercontent.com/2715151/145758133-e352473d-2afd-46cb-95e4-69b856ae7b61.png">
+<img width="1194" alt="Screen Shot 2021-12-13 at 12 35 50 AM" src="https://user-images.githubusercontent.com/2715151/145758143-a98dcf50-ac52-4fad-98fd-68e9917c3f94.png">
+<img width="1194" alt="Screen Shot 2021-12-13 at 12 36 57 AM" src="https://user-images.githubusercontent.com/2715151/145758149-322b82c7-a433-4dda-99b1-6307838ead58.png">
+<img width="1194" alt="Screen Shot 2021-12-13 at 12 36 15 AM" src="https://user-images.githubusercontent.com/2715151/145758156-61ae35db-d714-4caf-8046-5970c0d13ae5.png">
 
 ## Features
 
@@ -26,9 +30,8 @@ TBA
   - Team section with head shot
   - Footer and an email subscription form
 
-## Screenshots
 
-TBA
+
 
 ## Usage & Customization
 
