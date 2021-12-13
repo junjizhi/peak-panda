@@ -4,7 +4,7 @@ A modern, responsive landing page theme for business, built in Jekyll.
 
 The theme contains multiple commonly used sections, including logo, header, hero CTA, pricing table, team intro, etc.
 
-See the [demo](https://user-images.githubusercontent.com/2715151/145758133-e352473d-2afd-46cb-95e4-69b856ae7b61.png).
+See the [demo](https://junjizhi.github.io/peak-panda/).
 
 ## Screenshots
 
